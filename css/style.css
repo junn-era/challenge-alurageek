@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+
+header {
+    background-color:#006769 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.header__logo .footer__logo {
+    width: 120px;
+    height: 60px;
+}
+
+.header__title {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #E5E5E5;
+    padding: 15px 0px;
+}
+
+.content {
+    max-width: 1440px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 110px;
+    align-items: center;
+
+}
+
+
+
+.write__field {
+    width: 390px;
+    height: 60px;
+    border: 3px solid #197c37;
+    border-radius: 25px;
+    color: #9de4bd;
+    font-size: 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left:10px;
+
+}
+
+.btn__record{
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    background-color: #1c6d2e;
+    color: #ffffff;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.25rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn__clear {
+    width: 188px;
+    height: 55px;
+    border: 3px solid #197c37;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color:#1c6d2e;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #006769;
+    height: 200px;
+    flex-shrink: 0;
+    margin-top: auto;
+    width: 100%;
+}    
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text {
+    font-size: 1rem;
+    color: #E5E5E5;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+body{
+    display: flex;
+}
+
+.content{
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 768px;
+    width: auto;
+    text-align: center;
+}
+}
+
+@media (max-width: 430px){
+  
+    .header .footer{
+        min-width: 100%;
+    }
+
+    .content{
+        max-width: 430px;
+    }
+}
+
+    
+
+@media (max-width: 375px){
+    .header .footer{
+        min-width: 100%;
+    }
+
+    .content{
+        max-width: 375px;
+    }
+}
+
+@media (max-width:360px) {
+    .header .footer{
+        min-width: 100%;
+    }
+
+    .content{
+        max-width: 360px;
+    }
+}
